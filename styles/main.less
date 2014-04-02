@@ -123,7 +123,6 @@
     font-size:	60px;
     font-weight:	700;
     color:	#323232;
-    letter-spacing:	-3px;
     line-height:	1.45;
     #populr > .text-color-over-color(@background-color);
     position: relative;
@@ -132,6 +131,7 @@
 }
 body {
     background-size: 100% 50% !important;
+    overflow-x: hidden;
 }
 
 h2, h3, h4, h5 { text-shadow: 0 1px 1px rgba(0,0,0,0.4); }
@@ -381,7 +381,6 @@ h2, h3, h4, h5 { text-shadow: 0 1px 1px rgba(0,0,0,0.4); }
             line-height:1.45;
             text-align: center;
             color:#4c4c4c;
-            letter-spacing:-1px;
         }
         .description, .body, .description li, .body li,  {
             color: #4c4c4c;
@@ -398,7 +397,6 @@ h2, h3, h4, h5 { text-shadow: 0 1px 1px rgba(0,0,0,0.4); }
             line-height:1.45;
             text-align: center;
             color:#4c4c4c;
-            letter-spacing:-1px;
         }
         .description, .body, .description li, .body li,  {
             color: #4c4c4c;
@@ -453,14 +451,12 @@ h2, h3, h4, h5 { text-shadow: 0 1px 1px rgba(0,0,0,0.4); }
         .columnizer-cols3{
             .asset-title {
                 font-size: 24px;
-                letter-spacing: -1px;
             }
         }
         .columnizer-cols4{
             .asset-title {
                 font-weight: 300;
                 font-size: 24px;
-                letter-spacing: -1px;
             }
         }
         #doc-title{
@@ -469,6 +465,7 @@ h2, h3, h4, h5 { text-shadow: 0 1px 1px rgba(0,0,0,0.4); }
 }
 //padding-top bottom
 
+.footer { background: #323232; }
 
 .columnizer-cols1,.columnizer-cols2{
             padding-top: 15px;
@@ -551,7 +548,7 @@ h2, h3, h4, h5 { text-shadow: 0 1px 1px rgba(0,0,0,0.4); }
   .columnizer-cols2 .columnizer-col { width: 47% !important; }
 
   // Edit the typography for mobile
-  #pop-title { font-size: 40px !important; letter-spacing: none !important; }
+  #pop-title { font-size: 40px !important;}
   .asset-title { font-size: 24px !important; }
   .description, .body, .description li, .body li { font-size: 14px !important; }
   .asset-title, .description, .body, .description li, .body li { text-align: left !important; }
@@ -564,9 +561,10 @@ h2, h3, h4, h5 { text-shadow: 0 1px 1px rgba(0,0,0,0.4); }
 }
 
 @media screen and (max-width: 600px) {
-  #pop-title { font-size: 32px !important; }
+  #pop-title { font-size: 32px !important;}
   .asset-title { font-size: 20px !important; }
   #my-pop-title { padding: 40px !important; }
+  .font-size-smaller { font-size: 0.8em !important; }
 }
 
 
